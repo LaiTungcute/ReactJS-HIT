@@ -1,0 +1,35 @@
+.xyz h1 {
+  color: aqua;
+}
+.xyz p {
+  border: 1px solid #ddd;
+}
+
+.name {
+  background-color: aqua;
+}
+.name h1 {
+  color: red;
+}
+.name h2 {
+  background-color: antiquewhite;
+}
+
+.tung h1, .main h1 {
+  background-color: red;
+  color: blue;
+}
+.tung h2, .main h2 {
+  background-color: yellow;
+  color: red;
+}
+
+h1 {
+  color: #fff;
+}
+
+h2 {
+  background-color: #ccc;
+}
+
+/*# sourceMappingURL=style.css.map */

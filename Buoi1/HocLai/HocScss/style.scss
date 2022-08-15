@@ -1,0 +1,48 @@
+//import
+@import 'mod';
+//Biến
+$colorName: red;
+//Xếp chồng
+.name {
+    h1 {
+        color: $colorName;
+    }
+    background-color: aqua;
+    h2 {
+        background-color: antiquewhite;
+    }
+}
+
+//mixin
+@mixin theme ($color, $back){
+    background-color: $back;
+    color: $color;
+}
+
+%colorE {
+    //mixin
+    h1 {
+        @include theme(blue,red);
+    }
+    h2 {
+        @include theme(red, yellow)
+    }
+}
+
+.main {
+    //kế thừa
+   @extend %colorE;
+}
+
+.tung {
+    //Kế thừa
+    @extend %colorE;
+}
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    background-color: #ccc;
+}
